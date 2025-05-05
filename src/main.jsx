@@ -15,6 +15,7 @@ import HostVansDetail from '/src/pages/Host/HostVansDeatil';
 import HostVanInfo from '/src/pages/Host/HostVanInfo';
 import HostVanPricing from '/src/pages/Host/HostVanPricing';
 import HostVanPhotos from '/src/pages/Host/HostVanPhotos';
+import NotFound from '/src/pages/NotFound';
 
 import '/src/server'
 
@@ -39,6 +40,7 @@ function App() {
 						<Route path="photos" element={<HostVanPhotos />} />
 					</Route>
 				</Route>
+				<Route path='*' element={<NotFound />}/>
 			</Route>
       </Routes>
     </BrowserRouter>
